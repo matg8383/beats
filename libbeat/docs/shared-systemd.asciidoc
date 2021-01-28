@@ -73,6 +73,8 @@ To override these variables, create a drop-in unit file in the
 For example a file with the following content placed in
 +/etc/systemd/system/{beatname_pkg}.service.d/debug.conf+
 would override `BEAT_LOG_OPTS` to enable debug for Elasticsearch output.
+On Centos 7 the filebeat.service file could also be in 
++/usr/lib/systemd/system
 
 ["source", "systemd", subs="attributes"]
 ------------------------------------------------
